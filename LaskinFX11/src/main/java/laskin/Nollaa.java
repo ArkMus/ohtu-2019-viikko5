@@ -11,6 +11,16 @@ public class Nollaa extends Komento {
     @Override
     public void suorita() {
         sovellus.nollaa();
+        int laskunTulos = sovellus.tulos();
+        
+        syotekentta.setText("");
+        tuloskentta.setText("" + laskunTulos);
+
+        if ( laskunTulos==0) {
+            nollaa.disableProperty().set(true);
+        } else {
+            nollaa.disableProperty().set(false);
+        }
     }
 
     @Override
