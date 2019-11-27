@@ -25,7 +25,6 @@ public class Tapahtumankuuntelija implements EventHandler {
         komennot.put(nollaa, new Nollaa(tuloskentta, syotekentta,  nollaa, undo, sovellus) );
     }
     
-    
     @Override
     public void handle(Event event) {
         if ( event.getTarget() != undo ) {
